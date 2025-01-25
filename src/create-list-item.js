@@ -8,6 +8,8 @@ class CreateListItem {
     }
 }
 
+export { CreateListItem };
+
 const read = new CreateListItem('Read book', 'The Great Gatsby', 1002, 'low');
 
 console.log(read);
