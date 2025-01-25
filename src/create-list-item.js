@@ -1,4 +1,4 @@
-class CreateListItem {
+class ListItem {
     constructor(title, description, dueDate, priority, isComplete = false) {
         (this.title = title),
             (this.description = description),
@@ -8,9 +8,4 @@ class CreateListItem {
     }
 }
 
-export { CreateListItem };
-
-const read = new CreateListItem('Read book', 'The Great Gatsby', 1002, 'low');
-
-console.log(read);
-console.log(read.title);
+export { ListItem };
