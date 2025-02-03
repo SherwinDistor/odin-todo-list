@@ -3,6 +3,8 @@
     --color-primary: #68d211;
     --color-white: #eef2eb;
     --color-gray: #999999;
+    --color-yellow: #f1f53a;
+    --color-red: #ff5050;
 }
 
 body {
@@ -73,17 +75,66 @@ header {
     flex: 0 0 auto;
 }
 
+h2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
 ul {
     list-style-type: none;
-    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 li {
     display: flex;
     align-items: start;
+    margin-bottom: 0.5rem;
 }
 
 p {
     margin: 0;
+}
+
+.list-item-title {
+    font-size: 1rem;
+}
+
+.list-item-description {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.list-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+}
+
+.priority-btn {
+    font-size: 0.7rem;
+    width: 5rem;
+    border-radius: 2rem;
+    height: 1.3rem;
+    border: none;
+}
+
+.high {
+    background-color: var(--color-red);
+    color: var(--color-black);
+}
+
+.medium {
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.low {
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+.due-date {
     font-size: 0.8rem;
 }
