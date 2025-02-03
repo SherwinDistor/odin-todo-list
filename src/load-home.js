@@ -30,6 +30,13 @@ function loadMain() {
     return main;
 }
 
+function newListItem() {
+    const newListItem = document.createElement('div');
+    newListItem.classList = 'new-list-item';
+
+    return newListItem;
+}
+
 // Example list item
 function loadList() {
     const list = document.createElement('div');
@@ -67,6 +74,9 @@ function loadList() {
     dueDate.classList = 'due-date';
     dueDate.textContent = '9/21';
 
+    const newListItem = document.createElement('div');
+    newListItem.classList = 'new-list-item';
+
     listFooter.appendChild(priorityBtn);
     listFooter.appendChild(dueDate);
 
@@ -81,6 +91,7 @@ function loadList() {
 
     list.appendChild(listHeader);
     list.appendChild(listItems);
+    // list.appendChild(newListItem());
 
     return list;
 }
