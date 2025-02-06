@@ -87,7 +87,8 @@ ul {
     padding-right: 0.5rem;
 }
 
-li {
+li,
+form {
     display: flex;
     align-items: start;
     margin-bottom: 0.5rem;
@@ -137,4 +138,14 @@ p {
 
 .due-date {
     font-size: 0.8rem;
+}
+
+.adder {
+    border: none;
+    border-bottom: 1px solid var(--color-black);
+}
+
+.add-btn {
+    border: none;
+    padding: 0px 2px;
 }

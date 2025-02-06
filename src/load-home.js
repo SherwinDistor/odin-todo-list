@@ -1,3 +1,5 @@
+import { listAdder } from './add-new-list-item';
+
 function loadHeader() {
     const header = document.createElement('header');
     header.classList = 'wrap';
@@ -28,13 +30,6 @@ function loadMain() {
     main.appendChild(projectContainer);
 
     return main;
-}
-
-function newListItem() {
-    const newListItem = document.createElement('div');
-    newListItem.classList = 'new-list-item';
-
-    return newListItem;
 }
 
 // Example list item
@@ -74,8 +69,8 @@ function loadList() {
     dueDate.classList = 'due-date';
     dueDate.textContent = '9/21';
 
-    const newListItem = document.createElement('div');
-    newListItem.classList = 'new-list-item';
+    // const newListItem = document.createElement('div');
+    // newListItem.classList = 'new-list-item';
 
     listFooter.appendChild(priorityBtn);
     listFooter.appendChild(dueDate);
@@ -89,8 +84,11 @@ function loadList() {
 
     listItems.appendChild(listItem);
 
+    listItems.appendChild(listAdder());
+
     list.appendChild(listHeader);
     list.appendChild(listItems);
+
     // list.appendChild(newListItem());
 
     return list;
