@@ -1,4 +1,5 @@
 import { listAdder } from './add-new-list-item';
+import { addProjectFormHandler } from './add-new-project';
 
 function loadHeader() {
     const header = document.createElement('header');
@@ -11,6 +12,7 @@ function loadHeader() {
     const newProjectBtn = document.createElement('button');
     newProjectBtn.classList = 'new-project-btn';
     newProjectBtn.textContent = 'Create New Project';
+    newProjectBtn.addEventListener('click', addProjectFormHandler);
 
     header.appendChild(logo);
     header.appendChild(newProjectBtn);
@@ -26,7 +28,7 @@ function loadMain() {
     projectContainer.classList = 'wrap';
     projectContainer.id = 'project-container';
 
-    projectContainer.appendChild(loadList());
+    // projectContainer.appendChild(loadList());
     main.appendChild(projectContainer);
 
     return main;

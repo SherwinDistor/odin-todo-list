@@ -75,10 +75,16 @@ header {
     flex: 0 0 auto;
 }
 
-h2 {
+h2,
+.project-header-input {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     font-size: 1.2rem;
+}
+
+.project-header-input {
+    border: none;
+    margin-top: 1rem;
 }
 
 ul {
