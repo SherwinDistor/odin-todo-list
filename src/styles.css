@@ -84,7 +84,7 @@ h2,
 
 .project-header-input {
     border: none;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 ul {
@@ -154,4 +154,15 @@ p {
 .add-btn {
     border: none;
     padding: 0px 2px;
+}
+
+.submit-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.title-input-form {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0.5rem;
 }
