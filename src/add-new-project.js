@@ -56,8 +56,4 @@ function handleHeaderSubmit(e) {
     console.log(projectLibrary);
 }
 
-// add event listener to create new project button
-
-// create a form where you can fill in the title of the project
-
-export { addProjectFormHandler };
+export { addProjectFormHandler, projectLibrary };

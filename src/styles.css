@@ -154,6 +154,7 @@ p {
 .add-btn {
     border: none;
     padding: 0px 2px;
+    background-color: transparent;
 }
 
 .submit-btn {
